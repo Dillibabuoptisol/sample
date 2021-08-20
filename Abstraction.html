@@ -3,12 +3,13 @@ function Car(model) {
     this.model = model;
     this.gear = 1;
 
+
     this.doSome = function(){
         console.log('gear' + this.gear);
     }
 
     this.changeGear = function(changeTo) {
-        if(changeTo > 5){
+        if(changeTo > 4){
             throw new Error('Gear cannot be more than 5.');
         }
         this.gear = changeTo;
