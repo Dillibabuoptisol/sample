@@ -1,0 +1,27 @@
+<script>
+class company 
+{
+	employee1()
+	{
+		console.log("company rules");
+	}
+}
+class permanent extends company
+{
+	employee1()
+	{
+		console.log("follow permanent rules");
+	}
+}
+class trainee extends company
+{
+	employee1()
+	{
+		console.log("follow trainee rules");
+	}
+}
+const a= new permanent();
+const b= new trainee();
+a.employee1();
+b.employee1();
+</script>
