@@ -1,0 +1,24 @@
+<script>
+function myFunction() 
+{
+    const x = 50;
+    const y = 0;
+    try 
+	{
+        if (y === 0) 
+		{
+            throw ("we can't divided by zero");
+        } 
+		else 
+		{
+            const z = x / y;
+			document.write(z);
+        }
+    } 
+	catch (err) 
+	{
+        document.write("Error: " + err);
+    }
+}
+myFunction()
+</script>
